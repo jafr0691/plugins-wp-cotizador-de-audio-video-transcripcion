@@ -1,0 +1,2 @@
+<?php session_start(); ?>
+<script>document.getElementById('billing_fecha_entrega').value = sessionStorage.getItem("fechaentrega");document.getElementById('billing_comentario').setAttribute('readonly','readonly'); document.getElementById('billing_comentario').value = '<?php echo $_SESSION["comentarioAudio"]; ?>';</script>
